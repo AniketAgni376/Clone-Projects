@@ -17,7 +17,7 @@ html, body{
     width:100%;
     position: fixed;
     z-index: 999;
-    background-color: #0B0B0B;
+    background-color: #030303;
     padding: 25vh 10vw;
 }
 .line{
@@ -54,14 +54,49 @@ html, body{
 }
 
 .line h2{
-    font-size: 6.5vw;
+    font-size: 5vw;
     text-transform: uppercase;
     font-weight: 900;
+    opacity: 0;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
+
+@keyframes anime{
+    0%{
+        font-family: 'plain light';
+        -webkit-text-stroke: 1px #fff;
+        color:#fff;
+        font-weight:500;
+        opacity:1;
+    }
+    48%{
+        font-family: 'plain light';
+        -webkit-text-stroke: 1px #fff;
+        color:#fff;
+        font-weight:500;
+        opacity:0;
+    }
+    50%{
+       font-family: 'silk serif' ;
+       -webkit-text-stroke: 1px #fff;
+       color: transparent;
+       font-weight:500;
+       opacity:1;
+    }
+    100% {
+        font-family: 'silk serif' ;
+        -webkit-text-stroke: 1px #fff;
+        color: transparent;
+        font-weight:500;
+        opacity:0;
+     }
+}
+
 
 #main{
     position: relative;
-    background-color: #111;
+    background-color: #030303;
 }
 
 #page1{
